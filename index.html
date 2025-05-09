@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEET Rank Predictor 2025</title>
+
+  <!-- Important for linking CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>NEET Rank Predictor 2025</h2>
+    <input type="text" id="name" placeholder="Your Name" />
+    <input type="number" id="score" placeholder="Your Score (100 - 720)" />
+    <select id="difficulty">
+      <option value="" disabled selected>Select Difficulty</option>
+      <option value="easy">Easy</option>
+      <option value="moderate">Moderate</option>
+      <option value="difficult">Difficult</option>
+    </select>
+    <button onclick="submitScore()">Predict</button>
+    <div class="rank-result" id="rankDisplay" style="display: none;"></div>
+  </div>
+
+  <!-- Important for linking JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
